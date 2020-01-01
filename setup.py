@@ -4,13 +4,10 @@ from setuptools import setup, find_packages
 from setuptools.command.install import install
 
 __version__ = None
-exec(open('hope/version.py').read())
-
-with open('requirements.txt') as f:
-    reqs = f.read()
+exec(open('cgmh_ae/version.py').read())
 
 setup(
-    name='hope',
+    name='cgmh_ae',
     version=__version__,
     packages=find_packages(exclude=(
         'dist', 'utils', 'build')),
@@ -18,7 +15,7 @@ setup(
     description="Paraphrase Generation",
     author='',
     author_email='',
-    license='Apache 2.0',
+    license='',
     keywords="nlp machine-learning",
     url="",
 )

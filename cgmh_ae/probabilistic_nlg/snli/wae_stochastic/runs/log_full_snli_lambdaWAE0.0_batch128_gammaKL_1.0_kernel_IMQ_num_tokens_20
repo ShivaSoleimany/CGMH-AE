@@ -1,0 +1,661 @@
+{'device': '0', 'lstm_hidden_units': 100, 'embedding_size': 300, 'num_layers': 1, 'vocab_size': 30000, 'num_tokens': 20, 'latent_dim': 100, 'batch_size': 128, 'n_epochs': 20, 'dropout_keep_prob': 0.8, 'initial_learning_rate': 0.001, 'learning_rate_decay': 1.0, 'min_learning_rate': 1e-05, 'lambda_val': 0.0, 'gammaKL': 1.0, 'kernel': 'IMQ', 'z_temp': 1.0, 'data': '../data/snli_sentences_all.txt', 'w2v_file': '../w2v_models/w2v_300d_snli_all_sentences.pkl', 'bleu_path': 'bleu/', 'model_checkpoint_dir': '', 'logs_dir': '', 'ckpt': None}
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the shirt is on a ladder of a man .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men on a boat made of wood .	|	men fish on a concrete slab .
+		a man takes a break from the top of a mountain climbing up a mountain .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in black shirts are standing next to a pile of water .	|	two men in green t-shirts are standing by blocks of wood .
+		three people dressed up in costumes .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a large person on the ground .	|	there is a sign with a word on it .
+		the old person is walking to the store with his luggage .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are playing their instruments on their favorite and play	|	three men are watching football and drinking beers in the living room
+		a young woman making a piece of paper	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a kid riding his bike down the street with his family to come home .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the car seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is sleeping .	|	the little girl is resting .
+		a man and girl are baking .	|	a boy and a woman are cooking .
+		female learning how to swim in an igloo	|	adolescent girl waiting for possible portrait .
+		two teams play a game while their friends watch .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		there is a woman swimming in the air .
+		send her cellphone in the background
+		a crowd is jumping in the air next to his mother .
+		the workers in hard hats are making a snowman .
+		there are little boys working at a house .
+		woman is jumping out for a bed .
+		a crowd of men are throwing snowballs on his way .
+		there is a boys skating down .
+		a woman on the ground is being punished by .
+		female tennis player is sitting on the ground
+Epoch   1/20 - Time 3696.2, Train loss: 1.79, Val BLEU: 58.04 | 42.11 | 32.97 | 25.87
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the shirt is using a tool on the sidewalk .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men on a deck made up a tree .	|	men fish on a concrete slab .
+		a man climbs up the mountain of a mountain up a mountainside .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in white shirts are standing by wood in front of a house .	|	two men in green t-shirts are standing by blocks of wood .
+		three people dressed up for the band .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a sign on it .	|	there is a sign with a word on it .
+		the elderly person is cleaning the garbage off the sidewalk .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching their favorite play in front and each other	|	three men are watching football and drinking beers in the living room
+		a blond woman stirs a pot in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child riding his bike down the street , his favorite home .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the back of a car seat .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a man and a girl are cooking .	|	a boy and a woman are cooking .
+		teenage girls doing art for her picture .	|	adolescent girl waiting for possible portrait .
+		two guys play a volleyball game while they are taking .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		in the woods makes a snowman call .
+		playing volleyball on the cob .
+		a woman UNK feet in a long sleeved a fair .
+		three sisters with his tongue out .
+		shopping with the UNK
+		next to the library
+		performs outdoors .
+		the three men were holding hands in a rural area .
+		two men are riding in a pumpkin to their backyard .
+		a street vendor is playing from the bowling .
+Epoch   2/20 - Time 4918.4, Train loss: 1.19, Val BLEU: 70.86 | 58.01 | 49.77 | 42.98
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is grinding on a wooden bench .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men on a wooden deck .	|	men fish on a concrete slab .
+		a man climbs up a cliff with the UNK view down a snowy mountain .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in white shirts are standing by wood blocks .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown costumes as the circus .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the person is sweeping the homeless person on the ground .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching tv and drinking beer in the grass together	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a pot in clay court .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his bike down the street , getting his toy back .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		teenage girl posed for photograph doing laundry .	|	adolescent girl waiting for possible portrait .
+		two guys play baseball while they take a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a woman is moving across a wide expanse .
+		little women does not turn in a sandy area .
+		for a politician talks by the bend
+		dirt the band are using on the camera using a leaf blower
+		people eating a boy in the snow are using on a tuesday
+		has a girl on the sideline using special signs .
+		a female boy was sitting in the dirt preparing a .
+		a lady is sitting in the air about a fresh .
+		skater performing a bunch of money into there are .
+		dancers at the mall with matching backpacks .
+Epoch   3/20 - Time 4918.8, Train loss: 0.89, Val BLEU: 77.05 | 66.11 | 58.85 | 52.71
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is grinding on a stone the loom .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men on a wooden deck .	|	men fish on a concrete slab .
+		a man climbs up the bridge as a shadow of a steep river is using a stone .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in orange shirts are standing near sand pieces of paper .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown masks dance .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the sidewalk .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beer in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a pot on her stove .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his bike down the street back it is being back .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		teenage girl posed for picture inside airport .	|	adolescent girl waiting for possible portrait .
+		two guys play their friend while a third play .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a poodle eats cereal in the midst of her heavy .
+		black officer is focused on a blow through the water .
+		the crowded air is a shopping in progress .
+		group of soldiers have a haircut next to the pine grassy
+		black boy with glasses is making a decision in the orange .
+		tallants a man with dreads waits for the golden exercise item .
+		a lone family wearing all black takes a piece of exercise .
+		a boy and woman stand close to a broken object .
+		a baby in all black is making a turn down .
+		a man prepares through the small outdoor tube .
+Epoch   4/20 - Time 4911.4, Train loss: 0.70, Val BLEU: 80.39 | 70.58 | 63.97 | 58.3
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men on a wooden deck .	|	men fish on a concrete slab .
+		a man climbs up the side of a steep cliff that overlooks a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in orange shirts are standing by wooden blocks of blocks .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown masks before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the person is sweeping the garbage off the patio .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beer together in the living room	|	three men are watching football and drinking beers in the living room
+		a dark skinned woman stirs a clay pot in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his bike down the street , his back is being away .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		teenage girl looking for circus picture .	|	adolescent girl waiting for possible portrait .
+		two guys play baseball as they take a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a man in orange shirt is making the birds ' a turn .
+		a group of men do n't carrying a wooden umbrella .
+		emotively a boy with training around the meat go .
+		a cashier , on the street is having a UNK brush .
+		the football colored ferrari is preparing to a quiet plant .
+		a man in the green lab does n't sit on a stick .
+		two women that are doing a green frisbee next to each .
+		a circus man with crutches waits into the yellow x .
+		a man excitedly holds at a long board full .
+		credito a sidewalk and unkempt .
+Epoch   5/20 - Time 4926.6, Train loss: 0.61, Val BLEU: 82.74 | 73.9 | 67.86 | 62.64
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men step on a wooden deck .	|	men fish on a concrete slab .
+		a man climbs up the side of a steep cliff with a scenic view .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in orange shirts are standing by wooden blocks .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown masks after the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the person is sweeping the old garbage off the porch .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal pot in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his car down the street , his dirt bike and being away .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		girl acts modelling next for class photographer .	|	adolescent girl waiting for possible portrait .
+		two players who play baseball are taking a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a bartender cook along side is playing a rock .
+		a woman sleeps in an improvised equipment break .
+		boys are seeing in a UNK arch and the tuba .
+		a woman with dreadlocks goes into the small dining room .
+		a dark-skinned man in his pajamas are being very close to a .
+		a man in orange pushes the video airplanes along a snowy .
+		a man with an oar are waiting for a golden object .
+		a cowgirl wears sunglasses and a large from the parking lot .
+		a four wheeler stand in new york by an unseen .
+		form a free court towards the man in a full book .
+Epoch   6/20 - Time 4850.8, Train loss: 0.55, Val BLEU: 84.25 | 75.9 | 70.15 | 65.17
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a stone on the tool .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men step on a wooden stones .	|	men fish on a concrete slab .
+		a man climbs up the side of a steep cliff that overlooks a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in orange shirts are standing by wooden blocks of wood .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown masks before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the patio .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal stove in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his bike down the street , his father and drive cars .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		teenaged girl doing modelling for flight photos .	|	adolescent girl waiting for possible portrait .
+		two players play baseball while they take a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a younger man with dreadlocks is standing next to a soccer trap .
+		traditional hikers return the front of for a clay sphere .
+		the dog sat in a red rocket grinder at the mountains .
+		a clown , uses the pack of friends into a small campsite .
+		the woman band is helping with a few arrow into the fire .
+		clay a boy and woman are standing next to the ohio shape .
+		a girl on top is having a few gold ring .
+		an students walk around a single man with his blocks .
+		a mother sits in the snow while attempting a UNK deal .
+		a little girl was standing in between the old man turns .
+Epoch   7/20 - Time 4742.0, Train loss: 0.47, Val BLEU: 85.64 | 77.72 | 72.21 | 67.39
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening the wooden on a tool .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men step on a wooden deck .	|	men fish on a concrete slab .
+		a man climbs up the side of a steep rock that overlooks a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green shirts are standing by wood blocks of blocks .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown masks before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the porch .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal stove in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his car down the street , his dirt bike being away .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		third-world girl doing modelling for photo .	|	adolescent girl waiting for possible portrait .
+		two players play rugby while a third goes home .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a goal with no UNK to are golden headed through the ocean .
+		the audience of men lie beside a boy who is engulfed .
+		two people 's hands are doing a light walk .
+		tallants a man and woman are working at a UNK toss .
+		an woman was messing around a boy with work at the other prizes .
+		a surfer with dark hair passes to a dangerous open pool .
+		the UNK dog and woman are working on a low cut .
+		a mother and boy is standing under a long layer of his camera .
+		some boys pull a chair at all through the air .
+		a woman sits into the keg of a fundraising spot .
+Epoch   8/20 - Time 4650.0, Train loss: 0.43, Val BLEU: 86.47 | 79.03 | 73.83 | 69.26
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the plaid shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men step on a wooden slab .	|	men fish on a concrete slab .
+		a man climbs up the steep side of a rock that overlooks a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green shirts are standing by chunks of wood blocks .	|	two men in green t-shirts are standing by blocks of wood .
+		three people dressed clown before they hit .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the patio .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal pot in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his car down the dirt road , his hands talking by his mother .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		teenaged girl doing for sale photograph .	|	adolescent girl waiting for possible portrait .
+		two players play basketball while a third dog waits .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a pro man with four girls are trying to open a canvas .
+		a single man in shirtsleeves is helping a long temple .
+		the bearded boy has several doctors to watch a tennis match .
+		a game , allowing a man is trying to lie the marble .
+		a band had three miniature to stand by a man wake .
+		a huge man sits and get around a young university .
+		a few man are covering waiting for the air on a plastic case .
+		the day of women are being lowered a UNK in the couch .
+		a few man and girl get behind a round of the purses .
+		someone is cuddling a three in holes skills on it .
+Epoch   9/20 - Time 4629.9, Train loss: 0.40, Val BLEU: 87.56 | 80.44 | 75.45 | 71.06
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men step on a wooden stones .	|	men fish on a concrete slab .
+		a man climbs up the side of a steep rock overlooking a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green shirts are standing by wood blocks .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown costumes before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the patio .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal pot in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his bike down the street , his father pushing cars and his dog .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		third-world girl doing for sale picture .	|	adolescent girl waiting for possible portrait .
+		two players play basketball while a third dog waits .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		an papered man is talking to a flat inflatable house .
+		a man is organizing themselves in a small child 's shadow .
+		a soldier is lounging next to the grand kitchen .
+		a goose man is staring in the country on a red blob .
+		wonder the man congregate is in front his way are .
+		an african team wearing his white are off at a shady cut .
+		a male and grandmother walk off a green moonbounce .
+		a world clown and wearing a few are dropping off the grill .
+		a man is bobbing for the next other child on a successful .
+		a woman and three kids are working with a huge camera .
+Epoch  10/20 - Time 4624.8, Train loss: 0.35, Val BLEU: 88.28 | 81.5 | 76.69 | 72.42
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men fish on a concrete slab .	|	men fish on a concrete slab .
+		a man climbs up the steep side of a cliff that a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green shirts are standing by blocks of wood .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown costumes before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the patio .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal pot in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child riding his bike down the street , pushing his cars by another child .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		black-haired girl posed for flight reading .	|	adolescent girl waiting for possible portrait .
+		two players who play basketball are taking a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a man and woman have thrown a board on the UNK by .
+		a newly woman sit in tight green the dogs 's face .
+		a man practices with his three pairs hair into an enclosure .
+		two snowboarders follow through a glass 's playing hard benches .
+		a heavyset man with a shovel is being ready to demolish an .
+		violinist in a gym uniform is taking apart a bunch of keys .
+		a catcher and man were working on a shady beach .
+		a man surfs on a table which is pushing into the parking lot .
+		a single man is getting ready to sit a rock with an accordian .
+		a group of men put brown hair around a miniature car .
+Epoch  11/20 - Time 4626.3, Train loss: 0.35, Val BLEU: 88.89 | 82.4 | 77.78 | 73.68
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men fish on a concrete slab .	|	men fish on a concrete slab .
+		a man climbs up the side of a steep rock overlooking a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green shirts are standing by blocks of wood .	|	two men in green t-shirts are standing by blocks of wood .
+		three people dressed clown wearing costumes before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the person is sweeping the garbage off the patio .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal pan in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his dirt bike down the street , pushing his cars and luggage .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		third-world girl posed for flight doing .	|	adolescent girl waiting for possible portrait .
+		two players who play basketball are taking a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a lab UNK top is a lot to get the air .
+		two individuals are chewing on a peace sign and dry .
+		the woman dressed in a flat t-shirt is walking up the hall .
+		three middle women of tennis player are taking a nap in the background .
+		a grown man in red is taking a nap away with many stars .
+		a volleyball team covered is in black adjacent a save of a woman .
+		an animal UNK is working on his purple and outdoor way .
+		two girls being guitar and a man is about UNK the bodies .
+		the people were wearing a red shirt as they explore in the air .
+		toddlers and a woman are being transported on the open air .
+Epoch  12/20 - Time 4627.3, Train loss: 0.31, Val BLEU: 89.38 | 83.08 | 78.59 | 74.58
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men fish on a concrete slab .	|	men fish on a concrete slab .
+		a man climbs up the side of a steep rock overlooking a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green shirts are standing by wood blocks of .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown costumes before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the patio .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal pan in her backyard .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his car down the street , dirt being followed by his father .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		third-world girl posed for photography lessons .	|	adolescent girl waiting for possible portrait .
+		two players who play basketball are taking a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		insted man lie the grass to see a huge amount of competition .
+		fire a lady with clenched attempts to take the baby ,
+		the man with tattoos is going down a makeshift table in the hall .
+		pedestrians are listening to a partly filled beach .
+		a teen girl in danger pushes a few piece of wine on sand .
+		a man surfs and a lot of students are listening down .
+		the waitress and a man are standing next to his high audience .
+		a few women , led to fix a chair with the air .
+		a chief woman is jumping on the stairs and giving a food basket .
+		a man and dog are playing high a next line of his tie .
+Epoch  13/20 - Time 4624.1, Train loss: 0.30, Val BLEU: 89.71 | 83.55 | 79.14 | 75.19
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men fish on a concrete slab .	|	men fish on a concrete slab .
+		a man climbs up the steep side of a cliff that overlooks a steep river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green shirts are standing by garbage blocks .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown costumes before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the patio .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal pot in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his dirt bike down the street , his hands and being gas .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		black-haired girl posed for flight doing .	|	adolescent girl waiting for possible portrait .
+		two players play basketball who are taking a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a tourist , a man in red is making care of the white dog .
+		the women , there boy is playing in a front arch that extends .
+		a motorcyclist and a woman are looking UNK in the air .
+		a chinese man with dreadlocks jumped down the street in a UNK room .
+		two silver pins are thrown on a sidewalk for poor air .
+		the medical men on christmas jumps a rugged through an alleyway .
+		a large man is relaxing next to a world 's cones area .
+		a little male waits in the middle of a robot carry people .
+		a janitor , throwing a tree to there 's head people .
+		a young boy , has skipped on a break street present .
+Epoch  14/20 - Time 4625.8, Train loss: 0.30, Val BLEU: 90.11 | 84.15 | 79.88 | 76.06
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a stone on the tool .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men fish on a concrete slab .	|	men fish on a concrete slab .
+		a man climbs up the side of a steep rock that overlooks a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green shirts are standing by blocks of wood .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown masks before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the porch .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal pan in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his dirt bike down the street , being by his van .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		third-world girl posed for photography lessons .	|	adolescent girl waiting for possible portrait .
+		two players who play basketball are taking a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a gloved man with black hair is looking at a fall .
+		a man and girl have evolved a box on the air nearby .
+		a male and a girl ride is using empty to the white couch .
+		a man in a bathing suit does n't stand on a huge block .
+		two people without hair gather to a gray dog 's moving .
+		the red man UNK is wearing a raincoat as his group are using low .
+		a seagull is skating next to a newly of white my dog .
+		a fit man with a baby is jumping down at the university goal .
+		a circus man with dreads is walking to a hidden beach , .
+		the man has a bunch of laundry equipment and talking into the air .
+Epoch  15/20 - Time 4641.2, Train loss: 0.30, Val BLEU: 90.52 | 84.76 | 80.59 | 76.86
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men fish on a concrete slab .	|	men fish on a concrete slab .
+		a man climbs up the steep side of a rock that overlooks a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green shirts are standing by chunks pile of wood .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown costumes before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the porch .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal tub in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his bike down the street corner , his father while being motorcycle .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		black-haired girl posed for transportation lessons .	|	adolescent girl waiting for possible portrait .
+		two players who play basketball are taking a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a full mother and man uses the other side of a triathlon .
+		a warmly woman wearing the shirt and others are taking a picture .
+		a teenage man in uniform is cleaning a low cut while another girl .
+		a man with an afro helps his children to open down a conversation .
+		books , a man in front of the grand is helping down .
+		a main man in a green shirt is being observed on the camera .
+		a family and using a half are packed from the television .
+		the football player is sitting next to a lot of mickey dog .
+		a man turns dressed in a pink shirt that are moving .
+		a bearded man is jumping in the middle of a card store , while people .
+Epoch  16/20 - Time 4619.2, Train loss: 0.25, Val BLEU: 90.8 | 85.15 | 81.07 | 77.4
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men fish on a concrete slab .	|	men fish on a concrete slab .
+		a man climbs up the side of a steep rock that overlooks a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green t-shirts are standing by blocks of wood .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown makeup before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the patio .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal pot in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his bike down the street , parking lot while his son watches .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		black-haired girl waiting for possible portrait .	|	adolescent girl waiting for possible portrait .
+		two players who play basketball are taking a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a male day has a next to them every grand .
+		her three women , has a post to watch long boys .
+		two teams laugh in a blue suit that contains space together .
+		an adult team is sitting on a weed and giving it a woman .
+		a man with a spatula net looks down at the courtyard in a light .
+		a group of women are writing down a tarp in the air .
+		a UNK dog swings in the street off a printing arts .
+		a man and daughter have seen a over space .
+		a black family and put is under a crowd of they dropped .
+		a cameraman on the street does a cannon bath and looks out .
+Epoch  17/20 - Time 4622.6, Train loss: 0.25, Val BLEU: 90.93 | 85.36 | 81.33 | 77.71
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in a striped shirt is sharpening the tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men fish on a concrete slab .	|	men fish on a concrete slab .
+		a man climbs up the side of a steep rock that overlooks a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green t-shirts are standing by blocks of wood .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown makeup before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the patio .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal tub in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his dirt bike down the street , being garage by his van .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		black-haired girl waiting for photography portrait .	|	adolescent girl waiting for possible portrait .
+		two players who play basketball are taking a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a male runner in a sunlit park holds up the word .
+		the adult men have on a large beard refusing to enter the room .
+		a brunette man in front that a red are looking down with a test .
+		a bride and man UNK are using a low flag .
+		a man and girl are standing about a middle of radio 's .
+		a little girl is kneeling about to destroy a man with the water .
+		a group of grown men does n't walk on a purple shirt .
+		a man and full of a girls does work UNK .
+		a man with pink is fully looking down at a fire extinguisher .
+		a marathon worker and girl play the front of another baked down .
+Epoch  18/20 - Time 4630.9, Train loss: 0.24, Val BLEU: 91.27 | 85.78 | 81.79 | 78.21
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men fish on a concrete slab .	|	men fish on a concrete slab .
+		a man climbs up the side of a steep rock that overlooks a river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green t-shirts are standing by wood blocks of .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown masks before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the patio .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal pot in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his dirt bike down the street , being approached by his owner .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		adult girl waiting for possible portrait .	|	adolescent girl waiting for possible portrait .
+		two players who play basketball are taking a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		the man had on a lawn mower , looking at their camera .
+		a man and three children carry a cigarette on his front of highest .
+		a skateboarder dressed in the white own is sitting as another dog rushes .
+		two male figures walk by a man that stays in the university .
+		the foreground man is going down a sidewalk with an excited camera .
+		a man and woman have different logos on a train look .
+		a few girls are using nothing to open a mountain and partying .
+		a barber and boy have been working across a red tent .
+		two bicyclist with a happy woman look on into the snow room .
+		overflowing man with a tennis bra is looking at down the tin street .
+Epoch  19/20 - Time 4623.1, Train loss: 0.24, Val BLEU: 91.39 | 86.06 | 82.2 | 78.7
+
+		 Generated 	|	 Actual 
+		the kids are sitting on the couch	|	the kids are sitting on the couch
+		the man in the striped shirt is sharpening a tool on the stone .	|	the man in the striped shirt is sharpening a tool on the stone .
+		men fish on a concrete slab .	|	men fish on a concrete slab .
+		a man climbs up the steep side of a river that overlooks a rocky river .	|	a man climbs up the side of a steep rock that overlooks a river .
+		a gymnast performing .	|	a gymnast performing .
+		two men in green shirts are standing by wood of blocks .	|	two men in green t-shirts are standing by blocks of wood .
+		three people wearing clown masks before the parade .	|	three people wearing clown masks before the parade .
+		the tree is very tall	|	the tree is very tall
+		there is a sign with a word on it .	|	there is a sign with a word on it .
+		the elderly person is sweeping the garbage off the porch .	|	the elderly person is sweeping the garbage off the patio .
+		a young boy is outdoors	|	a young boy is outdoors
+		three men are watching football and drinking beers in the living room	|	three men are watching football and drinking beers in the living room
+		a middle-aged woman stirs a metal pot in her kitchen .	|	a middle-aged woman stirs a metal pit in her kitchen .
+		a child driving his bike wheels down the street , trash while his coach watches .	|	a child driving his power wheels car down the street , followed by his dad .
+		a man is sitting in the passenger seat of a car .	|	a man is sitting in the passenger seat of a car .
+		the little girl is resting .	|	the little girl is resting .
+		a boy and a woman are cooking .	|	a boy and a woman are cooking .
+		smiling girl posed for photography lessons .	|	adolescent girl waiting for possible portrait .
+		two players who play basketball are taking a break .	|	two players who play basketball are taking a break .
+		a dog chases the cat .	|	a dog chases the cat .
+		a photographer kneels and there is his favorite colored ball .
+		a lone girl and a man have no arms over an open bed .
+		a being woman outside of a blue can are going in the comfort room .
+		a women sets through a chair while many have been talking .
+		a cat waring a woman in high look down the room of coke
+		a cadet team is sitting in front of a downed rushing ball .
+		a man with four hair goes down a pile of seafood he is riding .
+		a woman with arms expressively is going down a rock in front of her .
+		an audience forgot their pants and fallen out of a fake microphone .
+		intently woman with a horse are walking down a set of hamburger .
+Epoch  20/20 - Time 4638.9, Train loss: 0.23, Val BLEU: 91.73 | 86.51 | 82.71 | 79.27
+
